@@ -47,5 +47,6 @@ function clearInput() {
     element.value = ''
 }
 
-module.exports = {handleInput, handleButton}
+module.exports = {handleInput, handleButton, clearContainer, setHiddenOnButton,
+    addParagraph, clearInput, getTextFromInput }
 
