@@ -2,7 +2,7 @@
 
 // 1.Вывести в консоль сумму всех целых чисел от 50 до
 // 100.
-function printSumIntegers() {
+export function printSumIntegers() {
     let result = 0
     for (let i = 50; i <= 100; i++) {
         result += i
@@ -16,7 +16,7 @@ function printSumIntegers() {
 // 7 x 2 = 14
 // …
 // 7 x 9 = 63
-function sevenMultiply() {
+export function sevenMultiply() {
     for (let i = 1; i <= 9; i++) {
         let result = 7 * i
         console.log(`7 x ${i} = ${result}`)
@@ -27,7 +27,7 @@ function sevenMultiply() {
 // *Запросить у пользователя ввод числа N. Вывести в
 // консоль среднее арифметическое всех нечётных
 // чисел от 1 до N
-function findArithmeticMean() {
+export function findArithmeticMean() {
     const input = prompt('введите целое положительное число')
     let sum = 0
     let count = 0
@@ -39,5 +39,3 @@ function findArithmeticMean() {
     }
     console.log(sum / count)
 }
-
-module.exports = {printSumIntegers, sevenMultiply, findArithmeticMean}

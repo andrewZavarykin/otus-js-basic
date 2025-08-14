@@ -1,4 +1,4 @@
-const {getDay, printMinutes, getYoungUser} = require('./hw8')
+import {getDay, printMinutes, getYoungUser} from './hw8'
 
 describe('hw8 tests', () => {
     afterEach(() => {

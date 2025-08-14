@@ -1,4 +1,4 @@
-const {getMax, mapNumberToMonth, circleAndSquare} = require('./hw2')
+import {getMax, mapNumberToMonth, circleAndSquare} from './hw2'
 
 describe('hw2 tests', () => {
     afterEach(() => {
@@ -44,7 +44,7 @@ describe('hw2 tests', () => {
             const res = circleAndSquare(10, 20)
             expect(res).toBeTruthy()
         })
-        test('should return true', () => {
+        test('should return false', () => {
             const res = circleAndSquare(20, 10)
             expect(res).toBeFalsy()
         })
