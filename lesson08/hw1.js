@@ -4,7 +4,7 @@
 // программу, которая выводит в консоль произведение
 // и сумму этих чисел.
 
-function sum(a, b) {
+export function sum(a, b) {
     if (typeof a === 'number' && typeof b === 'number') {
         const sum = a + b
         console.log(sum)
@@ -16,7 +16,7 @@ function sum(a, b) {
 // В двух переменных хранятся строки символов.
 // Написать программу, которая выведет в консоль
 // суммарное количество символов в обоих строках.
-function countChars(a, b) {
+export function countChars(a, b) {
     if (typeof a === 'string' && typeof b === 'string') {
         console.log(a.length + b.length)
     } else {
@@ -27,12 +27,10 @@ function countChars(a, b) {
 // Написать программу, которая запрашивает у
 // пользователя ввод трёхзначного числа, а потом
 // выводит в консоль сумму цифр введённого числа
-function promptNumberAndSumElements() {
+export function promptNumberAndSumElements() {
     const input = prompt('введите трехзначное число') // 111
     let value1 = input % 10
     let value2 = Math.floor((input % 100) / 10)
     let value3 = Math.floor(input / 100)
     console.log(value1 + value2 + value3)
 }
-
-module.exports = {sum, countChars, promptNumberAndSumElements}

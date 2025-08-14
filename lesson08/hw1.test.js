@@ -1,4 +1,4 @@
-const {sum, countChars, promptNumberAndSumElements} = require('./hw1')
+import {sum, countChars, promptNumberAndSumElements} from './hw1'
 
 describe('hw1 tests', () => {
     afterEach(() => {

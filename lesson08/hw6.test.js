@@ -1,4 +1,4 @@
-const {diff, isWord, pow} = require('./hw6')
+import {diff, isWord, pow} from './hw6'
 
 describe('hw6 tests', () => {
     afterEach(() => {
