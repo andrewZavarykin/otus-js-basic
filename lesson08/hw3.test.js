@@ -1,4 +1,4 @@
-const {printSumIntegers, sevenMultiply, findArithmeticMean} = require('./hw3')
+import {printSumIntegers, sevenMultiply, findArithmeticMean} from './hw3'
 
 describe('hw3 tests', () => {
     afterEach(() => {

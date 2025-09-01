@@ -2,7 +2,7 @@
 
 // 1.В переменных a и b хранятся числа. Вывести в
 // консоль наибольшее из них.
-function getMax(a, b) {
+export function getMax(a, b) {
     if (a > b) {
         console.log(a)
     } else {
@@ -13,7 +13,7 @@ function getMax(a, b) {
 // 2.Запросить у пользователя ввод числа от 1 до 12.
 // Вывести в консоль название месяца, соответствующее
 // этому числу (1 — январь, 2 — февраль и т.д.).
-function mapNumberToMonth(a) {
+export function mapNumberToMonth() {
     const input = prompt('введите число от 1 до 12')
 
     switch (+input) {
@@ -60,11 +60,8 @@ function mapNumberToMonth(a) {
 // *В переменных circle и square хранятся площади круга
 // и квадрата соответственно. Написать программу,
 // которая определяет, поместится ли круг в квадрат.
-function circleAndSquare(circle, square) {
+export function circleAndSquare(circle, square) {
     const aSquare = Math.sqrt(square)
     const dCircle = 2 * Math.sqrt(circle / Math.PI)
     return aSquare >= dCircle
 }
-
-
-module.exports = {getMax, mapNumberToMonth, circleAndSquare}

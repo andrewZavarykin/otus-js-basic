@@ -1,4 +1,4 @@
-const {rightTriangle, getLengthAndArea, quadraticEquation} = require('./hw9')
+import {rightTriangle, getLengthAndArea, quadraticEquation} from './hw9'
 
 describe('hw9 tests', () => {
     afterEach(() => {

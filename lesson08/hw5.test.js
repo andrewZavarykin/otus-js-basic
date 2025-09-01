@@ -1,4 +1,4 @@
-const {array, printSum, copyArray, findMaxAndMin} = require('./hw5')
+import {array, printSum, copyArray, findMaxAndMin} from './hw5'
 
 describe('hw 5 tests', () => {
     afterEach(() => {

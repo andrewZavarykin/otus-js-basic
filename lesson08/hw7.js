@@ -1,10 +1,10 @@
-function handleInput() {
+export function handleInput() {
     const input = document.querySelector('input')
     const value = input.value
     setHiddenOnButton(value)
 }
 
-function setHiddenOnButton(value) {
+export function setHiddenOnButton(value) {
     const button = document.querySelector('button')
     if (value.trim()) {
         button.hidden = false
@@ -13,13 +13,13 @@ function setHiddenOnButton(value) {
     }
 }
 
-function handleButton() {
+export function handleButton() {
     clearContainer()
     addParagraph()
     clearInput()
 }
 
-function addParagraph() {
+export function addParagraph() {
     const text = getTextFromInput()
     if (text.trim()) {
         const paragraph = document.createElement('p')
@@ -29,12 +29,12 @@ function addParagraph() {
     }
 }
 
-function getTextFromInput() {
+export function getTextFromInput() {
     const input = document.querySelector('input')
     return input.value
 }
 
-function clearContainer() {
+export function clearContainer() {
     const container = document.querySelector('.container')
     const paragraphs = container.querySelectorAll('p')
     if (paragraphs.length >= 4) {
@@ -42,11 +42,8 @@ function clearContainer() {
     }
 }
 
-function clearInput() {
+export function clearInput() {
     const element = document.querySelector('input')
     element.value = ''
 }
-
-module.exports = {handleInput, handleButton, clearContainer, setHiddenOnButton,
-    addParagraph, clearInput, getTextFromInput }
 

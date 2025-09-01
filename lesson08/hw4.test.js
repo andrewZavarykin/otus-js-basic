@@ -1,4 +1,4 @@
-const {user, writeAge, createAdmin, destructuringObject} = require('./hw4')
+import {user, writeAge, createAdmin, destructuringObject} from './hw4'
 
 describe('hw4 tests', () => {
     afterEach(() => {

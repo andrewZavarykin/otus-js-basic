@@ -1,7 +1,5 @@
-const { handleInput, handleButton,
-        clearContainer, setHiddenOnButton,
-        clearInput, getTextFromInput } = require('./hw7')
-const fs = require('fs')
+import { handleInput, handleButton, clearContainer, setHiddenOnButton, clearInput, getTextFromInput } from './hw7'
+import fs from 'fs'
 
 const htmlData = fs.readFileSync('./lesson08/hw7.html', 'utf-8')
 describe('hw4', () => {

@@ -1,4 +1,4 @@
-const {isDate, isEmail, isPhoneNumber} = require('./hw10')
+import {isDate, isEmail, isPhoneNumber} from './hw10'
 
 describe('hw10 tests', () => {
     afterEach(() => {
